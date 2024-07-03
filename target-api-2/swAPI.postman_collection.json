@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "f2f79239-abff-4051-b3c2-93ee22e3a756",
+		"name": "swAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16825126"
+	},
+	"item": [
+		{
+			"name": "swAPI-GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{swAPI}}/films/",
+					"host": [
+						"{{swAPI}}"
+					],
+					"path": [
+						"films",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swAPI-POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Rorona Zoro\",\r\n  \"height\": \"172\",\r\n  \"mass\": \"77\",\r\n  \"hair_color\": \"blond\",\r\n  \"skin_color\": \"fair\",\r\n  \"eye_color\": \"blue\",\r\n  \"birth_year\": \"19BBY\",\r\n  \"gender\": \"male\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{swAPI}}/people/",
+					"host": [
+						"{{swAPI}}"
+					],
+					"path": [
+						"people",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swAPI-PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Updated Luke Skywalker\",\r\n  \"height\": \"172\",\r\n  \"mass\": \"77\",\r\n  \"hair_color\": \"blond\",\r\n  \"skin_color\": \"fair\",\r\n  \"eye_color\": \"blue\",\r\n  \"birth_year\": \"19BBY\",\r\n  \"gender\": \"male\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{swAPI}}/people/1/",
+					"host": [
+						"{{swAPI}}"
+					],
+					"path": [
+						"people",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swAPI-DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{swAPI}}/people/2",
+					"host": [
+						"{{swAPI}}"
+					],
+					"path": [
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swAPI-GET2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{swAPI}}/vehicles/4/",
+					"host": [
+						"{{swAPI}}"
+					],
+					"path": [
+						"vehicles",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

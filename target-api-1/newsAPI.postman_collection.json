@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "1b33d1ff-be23-4528-ba36-726bff3cf5fc",
+		"name": "newsAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16825126"
+	},
+	"item": [
+		{
+			"name": "newsAPI-GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{newsAPI}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines/sources?country=us",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines",
+						"sources"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "us"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsAPI-POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{newsAPI}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"Bootcamp NEWS\",\r\n\"description\": \"Data Engineer Bootcamp\",\r\n\"url\": \"https://DataEngineer.com\",\r\n\"category\": \"general\",\r\n\"language\": \"en\",\r\n\"country\": \"us\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines/sources",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines",
+						"sources"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsAPI-DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{newsAPI}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines/sources?id=abc-news",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines",
+						"sources"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "abc-news"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsAPI-PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{newsAPI}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": \"abc-news\",\r\n\"name\": \"GO GO\",\r\n\"description\": \"Semangat\",\r\n\"url\": \"https://go.go.com\",\r\n\"category\": \"general\",\r\n\"language\": \"en\",\r\n\"country\": \"us\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines/sources",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines",
+						"sources"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsAPI-GET2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{newsAPI}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?q=trump",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "trump"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
